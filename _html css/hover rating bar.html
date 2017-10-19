@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <style>
+
+        .box:hover ~ .box {
+            background-color: #8c9b26; /* lighter green */
+            color: white;
+        }
+
+		/* , .box:hover + .box */
+        .box:hover {
+            background-color: #828c23; /* darker green */
+            color: white;
+        }
+
+        .box {
+            font-size: 150%;
+            color: transparent;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(10, 10, 240, 0.2);
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            transition: color 0.2s ease;
+        }
+
+        .box:first-child {
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-right: 1px solid #333;
+        }
+
+        .box:last-child {
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-left: 1px solid #333;
+        }
+
+        .container {
+            float: left;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<p>
+    Hover across the bar
+</p>
+<div class="container">
+    <div class="box">10</div>
+    <div class="box">9</div>
+    <div class="box">8</div>
+    <div class="box">7</div>
+    <div class="box">6</div>
+    <div class="box">5</div>
+    <div class="box">4</div>
+    <div class="box">3</div>
+    <div class="box">2</div>
+    <div class="box">1</div>
+</div>
+
+</body>
+</html>
