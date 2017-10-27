@@ -9,11 +9,13 @@ import { MessageService } from './_services/index';
 })
 
 export class AppComponent implements OnDestroy {
-    message: any;
+    message: string;
     subscription: Subscription;
 
     constructor(private messageService: MessageService) {
-        this.subscription = this.messageService.getMessage().subscribe(message => { this.message = message; });
+        this.subscription = this.messageService.getMessage().subscribe(
+            message => this.message = message.text // Observable contains object with a string-variable "text"
+        );
     }
 
     ngOnDestroy() {
