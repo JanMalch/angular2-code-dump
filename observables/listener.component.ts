@@ -14,7 +14,7 @@ export class AppComponent implements OnDestroy {
 
     constructor(private messageService: MessageService) {
         this.subscription = this.messageService.getMessage().subscribe(
-            message => this.message = message.text // Observable contains object with a string-variable "text"
+            message => this.message = message.text // Messages of the Observable contain objects with a string-variable "text"
         );
     }
 
