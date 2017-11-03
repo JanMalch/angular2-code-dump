@@ -5,7 +5,7 @@ http://localhost:4200/foo;person=Bernie;friend=true
 { path: 'foo', component: FooComponent }
 
 // Routing in HTML
-<a [routerLink]="['/foo' {person: 'Bernie', friend: true}]">...</a>
+<a [routerLink]="['/foo', {person: 'Bernie', friend: true}]">...</a>
 
 // Routing in TS
 this.router.navigate(['/foo', 
