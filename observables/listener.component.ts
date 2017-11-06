@@ -16,6 +16,11 @@ export class AppComponent implements OnDestroy {
         this.subscription = this.messageService.getMessage().subscribe(
             message => this.message = message.text // Messages of the Observable contain objects with a string-variable "text"
         );
+        
+        // !!! code for pure string-message-service !!!
+        this.subscription = this.messageService.getMessage().subscribe(
+            text => this.message = text // Messages of the Observable is the desired string
+        );
     }
 
     ngOnDestroy() {
