@@ -1,0 +1,18 @@
+<!-- Open URL:  -->
+<a [routerLink]="['/suche', {suchtext:suchtext, option:2}]"> Very nice Link </a>
+
+
+
+
+<!-- //radiobuttons on main page-->
+
+<div>
+  <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="rezeptsuche" id="rezeptenamen" [value]="1" [(ngModel)]="option"> Option1
+  </label>
+</div>
+<div>
+  <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="rezeptsuche" id="rezeptetag" [value]="2" [(ngModel)]="option"> Option2 
+  </label>
+</div>

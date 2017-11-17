@@ -2,18 +2,16 @@
 <html lang="de">
 <head>
     <style>
-
-        .box:hover ~ .box {
-            background-color: #8c9b26; /* lighter green */
-            color: white;
+        body {
+            padding: 20px;
         }
-
-		/* , .box:hover + .box */
-        .box:hover {
-            background-color: #828c23; /* darker green */
-            color: white;
+	    
+	.container {
+            display: flex;
+            flex-direction: row-reverse;
+	    justify-content: flex-end;
         }
-
+	    
         .box {
             font-size: 150%;
             color: transparent;
@@ -39,18 +37,18 @@
             border-bottom-left-radius: 50%;
             border-left: 1px solid #333;
         }
-
-        .container {
-            float: left;
-            display: flex;
-            flex-direction: row-reverse;
+	    
+        .box:hover ~ .box {
+            background-color: #8c9b26; /* lighter green */
+            color: white;
         }
 
-        body {
-            padding: 20px;
+	/* .box:hover + .box, */ /* also hightlights previous in darker green */
+        .box:hover {
+            background-color: #828c23; /* darker green */
+            color: white;
         }
-
-
+  
     </style>
 </head>
 <body>

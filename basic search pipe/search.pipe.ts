@@ -1,3 +1,4 @@
+// add pipe to declarations in NgModule!
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
