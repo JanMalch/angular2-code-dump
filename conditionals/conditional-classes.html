@@ -5,3 +5,5 @@
 <div [ngClass]="{1: 'my-class1', 2: 'my-class2', 3: 'my-class4'}[step]" ></div>
 
 <div [ngClass]="(step == 'step1') ? 'my-class1' : 'my-class2'" ></div>
+
+<div [ngClass]="[foo.classA, foo.classB]"></div>
