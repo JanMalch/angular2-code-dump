@@ -1,0 +1,5 @@
+<p>Let's say an entry is an object with the String-property "title" and some others. Instead of adding extra lines of code to sort your "entries"-array beforehand, you can use this handy pipe. The pipe also works with numbers, and basically anything that's comparable with < and ><br/>Just put the name of the property you want to sort after in 'single quotes' as the parameter for the pipe.</p>
+
+<div *ngFor="let entry of entries | sortAnyArray: 'title'">
+	{{ entry.title }}
+</div>
