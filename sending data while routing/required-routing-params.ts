@@ -11,4 +11,5 @@ http://localhost:4200/foo/marek
 this.router.navigate(['/foo', 'Marek']);
 
 // Read
+constructor(private route: ActivatedRoute) { //...
 this.route.snapshot.params['id'];
