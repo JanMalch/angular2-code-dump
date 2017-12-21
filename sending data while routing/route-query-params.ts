@@ -13,4 +13,5 @@ this.router.navigate(['/foo', {
 }]);
 
 // Read
+constructor(private route: ActivatedRoute) { //...
 this.route.snapshot.queryParams['person'];
