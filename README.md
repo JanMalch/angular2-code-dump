@@ -1,1 +1,1 @@
-#Code dump for Angular 2+ snippets
+# Code dump for Angular 2+ snippets
