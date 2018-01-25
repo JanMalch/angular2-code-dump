@@ -1,0 +1,27 @@
+<form #myForm="ngForm" (ngSubmit)="register(myForm)" novalidate>
+  <p>Is "myForm" valid? {{myForm.valid}}</p>
+  <div>
+    <label>Name</label>
+    <input type="text" name="name" ngModel required/>
+  </div>
+
+  <div>
+    <label>Birth Year</label>
+    <input type="text" name="birthYear" ngModel/>
+  </div>
+
+  <div>
+    <h3>Location</h3>
+    <div>
+      <label>Country</label>
+      <input type="text" name="country" ngModel/>
+    </div>
+    <div>
+      <label>City</label>
+      <input type="text" name="city" ngModel/>
+    </div>
+  </div>
+  <pre>{{myForm.value | json}}</pre>
+  <button type="submit">Register</button>
+  <button type="button">Print to console</button>
+</form>
