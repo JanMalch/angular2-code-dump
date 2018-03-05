@@ -7,6 +7,8 @@ import {NgForm} from "@angular/forms";
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
+  
+  name: string = "John Doe";
 
   // remember to import FormsModule in your module
   constructor() { }
