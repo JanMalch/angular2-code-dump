@@ -8,6 +8,7 @@ import {NgForm} from "@angular/forms";
 })
 export class FormComponent implements OnInit {
 
+  // remember to import FormsModule in your module
   constructor() { }
 
   ngOnInit() {
