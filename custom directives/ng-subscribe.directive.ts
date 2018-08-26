@@ -16,6 +16,7 @@ export class NgSubscribeContext {
 // ALL CREDIT TO Netanel Basal
 // https://netbasal.com/diy-subscription-handling-directive-in-angular-c8f6e762697f
 // Don't forget to add NgSubscribeDirective to your module's declarations!
+// Usage: <div *ngSubscribe="foo$ as foo">{{ foo }}</div>
 
 @Directive({
   selector: '[ngSubscribe]'
