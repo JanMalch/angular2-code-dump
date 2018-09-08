@@ -16,9 +16,7 @@ After reading this you will be able to create a [structural directive](https://a
 ```
 The directive will take a number as input (here `10`, this can also be connected to a variable in your component of course) and an exponent (here `3`). It will give you the calculated power, root and your inputs. You will also be able to increment the input manually and have all values updated.
 
->Written by [JanMalch](https://github.com/JanMalch)
->
->Also available as a [gist](https://gist.github.com/JanMalch/800cc0e1e448961fa5d93289e24e26fb)
+>Written by [JanMalch](https://github.com/JanMalch) // [gist version](https://gist.github.com/JanMalch/800cc0e1e448961fa5d93289e24e26fb)
 
 ## Table of contents
 
