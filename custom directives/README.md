@@ -18,6 +18,8 @@ After reading this you will be able to create a [structural directive](https://a
 ## Table of contents
 
 * [Basics](#basics)
+* * [Inputs](#inputs)
+* * [Rendering](#rendering)
 * [Using variables in the template](#using-variables-in-the-template)
 * * [`$implicit`](#implicit)
 * * [excursus: microsyntax and `*ngFor`](#excursus-microsyntax-and-ngfor)
@@ -42,6 +44,8 @@ constructor(private vcr: ViewContainerRef,
             private tmpl: TemplateRef<any>) { }
 ```
 
+### Inputs
+
 To create the default input (`10` in the example above), you add a `@Input()` and give it the same name as the directive selector:
 
 ```typescript
@@ -62,6 +66,8 @@ To set inputs you use a `:`. The default input is first and doesn't need a label
 ```html
 <div *math="10; exponent: 3">Test</div>
 ```
+
+### Rendering
 
 The `div` won't be rendered at this point. To do this we have to render the `TemplateRef` in the `ViewContainerRef`.
 
