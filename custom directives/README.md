@@ -39,7 +39,7 @@ To get the HTML template you defined (the `div` container) and a view container 
 
 ```typescript
 constructor(private vcr: ViewContainerRef,
-            private tmpl: TemplateRef<MathContext>) { }
+            private tmpl: TemplateRef<any>) { }
 ```
 
 To create the default input (`10` in the example above), you add a `@Input()` and give it the same name as the directive selector:
