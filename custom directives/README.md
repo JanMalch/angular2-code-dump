@@ -14,6 +14,7 @@ After reading this you will be able to create a [structural directive](https://a
     <button (click)="ctrl.increment()">increment input</button>
 </div>
 ```
+The directive will take a number as input (here `10`, this can also be connected to a variable in your component of course) and an exponent (here `3`). It will give you the calculated power, root and your inputs. You will also be able to increment the input manually and have all values updated.
 
 ## Table of contents
 
@@ -54,7 +55,7 @@ To create the default input (`10` in the example above), you add a `@Input()` an
 
 >Inputs will be availabe in the `ngOnInit` lifecycle hook.
 
-To add the `exponent` input you add another `Input()`. The name has to start with the directive selector and then the actual variable name.
+To add the `exponent` input you add another `Input()`. The name has to start with the directive selector and then the actual variable name, but with the first letter capitalized.
 
 ```typescript
 @Input() mathExponent: number;
