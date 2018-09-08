@@ -124,11 +124,10 @@ The `$implicit` variable is sugared syntax as you can omit it when connecting to
 ```html
 <div *math="10; exponent: 3; let input; 
             let exponent = exponent; let r = root;
-            let p = power; let ctrl = controller">
+            let p = power">
     input: {{ input }}, exponent = {{ exponent }}<br/>
     root = {{ input }}<sup>1/{{ exponent }}</sup> = {{ r }}<br/>
-    power = {{ input }}<sup>{{ exponent }}</sup> = {{ p }}<br/><br/>
-    <button (click)="ctrl.increment()">increment input</button>
+    power = {{ input }}<sup>{{ exponent }}</sup> = {{ p }}
 </div>
 ```
 
