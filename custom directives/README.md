@@ -243,11 +243,11 @@ images = [
         source: "https://angular.io/generated/images/marketing/home/angular-connect.png"
         title: "Angular Connect"
     }
-]
+];
 ```
 
 ```html
-<div *carousel="let source of images; let title = title; let ctrl = controller">
+<div *carousel="let source from images; let title = title; let ctrl = controller">
     <button (click)="ctrl.previous()">Previous</button>
     <img [src]="source" [title]="title">
     <button (click)="ctrl.next()">Next</button>
