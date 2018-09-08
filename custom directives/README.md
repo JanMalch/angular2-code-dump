@@ -246,6 +246,7 @@ images = [
 ];
 ```
 
+#### app.component.html
 ```html
 <div *carousel="let source from images; let title = title; let ctrl = controller">
     <button (click)="ctrl.previous()">Previous</button>
