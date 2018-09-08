@@ -36,6 +36,7 @@ The directive will take a number as input (here `10`, this can also be connected
 ## Basics
 
 First create a new directive with `ng g d math`. You change the selector to `"math"` like this:
+
 ```typescript
 @Directive({
   selector: '[math]' //tslint:disable-line:directive-selector
@@ -59,14 +60,14 @@ To create the default input (`10` in the example above), you add a `@Input()` an
 
 >Inputs will be availabe in the `ngOnInit` lifecycle hook.
 
-To add the `exponent` input you add another `Input()`. The name has to start with the directive selector and then the actual variable name, but with the first letter capitalized.
+To add the `exponent` input you add another `@Input()`. The name has to start with the directive selector and then the actual variable name, but with the first letter capitalized.
 
 ```typescript
 @Input() mathExponent: number;
 // or: @Input("mathExponent") exponent: number;
 ```
 
-To set inputs you use a `:`. The default input is first and doesn't need a label.
+To set inputs in your HTML you use a `:`. The default input is first and doesn't need a label.
 
 ```html
 <div *math="10; exponent: 3">Test</div>
