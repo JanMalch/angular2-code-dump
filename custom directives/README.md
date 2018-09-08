@@ -20,11 +20,11 @@ After reading this you will be able to create a [structural directive](https://a
 * [Basics](#basics)
 * [Using variables in the template](#using-variables-in-the-template)
 * * [`$implicit`](#implicit)
-* * [excursus: microsyntax and `*ngFor`](#excursusmicrosyntax-and-ngfor)
+* * [excursus: microsyntax and `*ngFor`](#excursus-microsyntax-and-ngfor)
 * [Implementing logic](#implementing-logic)
 * [Add more functionality](#add-more-functionality)
 * [Practice time](#practice-time)
-* [Credits & Learn more](#creditslearn-more)
+* [Credits & Learn more](#credits--learn-more)
 
 ## Basics
 
