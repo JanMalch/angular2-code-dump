@@ -22,16 +22,16 @@ The directive will take a number as input (here `10`, this can also be connected
 
 ## Table of contents
 
-* [Basics](#basics)
-* * [Inputs](#inputs)
-* * [Rendering](#rendering)
-* [Using variables in the template](#using-variables-in-the-template)
-* * [`$implicit`](#implicit)
-* * [excursus: microsyntax and `*ngFor`](#excursus-microsyntax-and-ngfor)
-* [Implementing logic](#implementing-logic)
-* [Add more functionality](#add-more-functionality)
-* [Practice time](#practice-time)
-* [Credits & Learn more](#credits--learn-more)
+- [Basics](#basics)
+  - [Inputs](#inputs)
+  - [Rendering](#rendering)
+- [Using variables in the template](#using-variables-in-the-template)
+  - [`$implicit`](#implicit)
+  - [excursus: microsyntax and `*ngFor`](#excursus-microsyntax-and-ngfor)
+- [Implementing logic](#implementing-logic)
+- [Add more functionality](#add-more-functionality)
+- [Practice time](#practice-time)
+- [Credits & Learn more](#credits--learn-more)
 
 ## Basics
 
