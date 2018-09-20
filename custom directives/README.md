@@ -56,8 +56,6 @@ To create the default input (`10` in the example above), you add a `@Input()` an
 @Input() math: number;
 ```
 
->Inputs will be availabe in the `ngOnInit` lifecycle hook.
-
 To add the `exponent` input you add another `@Input()`. The name has to start with the directive selector and then the actual variable name, but with the first letter capitalized.
 
 ```typescript
@@ -69,6 +67,15 @@ To set inputs in your HTML you use a `:`. The default input is first and doesn't
 
 ```html
 <div *math="10; exponent: 3">Test</div>
+```
+
+As `@Input()` values are available in `ngOnInit` we can use them from now on in our directive. With the HTML above we get the following result
+
+```typescript
+ngOnInit() {
+  console.log("base value =", this.math);       // base value = 10
+  console.log("exponent =", this.mathExponent); // exponent = 3
+}
 ```
 
 ### Rendering
@@ -156,10 +163,10 @@ To pass in the context we simply add it as an argument in `createEmbeddedView`
 
 ```typescript
 this.vcr.createEmbeddedView(this.tmpl, {
-    $implicit: this.math, // the value from our @Input()
-    root: Math.pow(this.math, 1 / this.mathExponent),
-    power: Math.pow(this.math, this.mathExponent),
-    exponent: this.mathExponent // the value from our @Input()
+    $implicit: this.math,                             // the value from our @Input()
+    power: Math.pow(this.math, this.mathExponent),    // scary math
+    root: Math.pow(this.math, 1 / this.mathExponent), // even scarier math
+    exponent: this.mathExponent                       // the value from our @Input()
 });
 ```
 
@@ -184,7 +191,7 @@ export class MathDirective implements OnInit, OnDestroy {
 
 You now have a fully functioning `*math` directive!
 
-## Add more functionality
+## Advanced functionality
 
 The last thing missing is the ability to increment the input value and update the output.
 First we create a private function called `increment`, which increases our `math` variable and renders the template again.
