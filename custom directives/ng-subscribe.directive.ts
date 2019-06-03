@@ -19,6 +19,7 @@ export class NgSubscribeContext {
 // Usage: <div *ngSubscribe="foo$ as foo">{{ foo }}</div>
 
 @Directive({
+  // tslint:disable-next-line:directive-selector
   selector: '[ngSubscribe]'
 })
 export class NgSubscribeDirective implements OnInit, OnDestroy {
